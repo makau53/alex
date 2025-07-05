@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purelyalex - Poetry, Global Trends & Portfolio</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="logo-loader">
+                <div class="logo-spin">
+                    <i class="fas fa-feather-alt"></i>
+                </div>
+            </div>
+            <div class="loading-text">Purelyalex</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">
+                <img src="1.jpg" alt="Purelyalex" class="nav-logo">
+                <span class="brand-text">Purelyalex</span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#" class="nav-link active" data-section="home">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#" class="nav-link" data-section="poetry">
+                    <i class="fas fa-feather-alt"></i>
+                    <span>Poetry</span>
+                </a>
+                <a href="#" class="nav-link" data-section="blog">
+                    <i class="fas fa-globe"></i>
+                    <span>World Trends</span>
+                </a>
+                <a href="#" class="nav-link" data-section="portfolio">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Portfolio</span>
+                </a>
+                <a href="#" class="nav-link" data-section="about">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+                <a href="#" class="nav-link" data-section="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+
+            <div class="nav-controls">
+                <button class="search-toggle" id="search-toggle">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Search Bar -->
+        <div class="search-bar" id="search-bar">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search poems, articles, projects...">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="search-close" id="search-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <!-- Hero Section -->
+            <div class="hero">
+                <div class="hero-background">
+                    <div class="floating-particles"></div>
+                </div>
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="profile-section">
+                            <div class="profile-image">
+                                <img src="2.jpg" alt="Purelyalex" id="profile-pic">
+                                <div class="profile-ring"></div>
+                            </div>
+                            <div class="profile-info">
+                                <h1 class="hero-title">
+                                    <span class="greeting">Hi, I'm Alex,</span>
+                                    <span class="name">Purelyalex</span>
+                                </h1>
+                                <div class="typing-container">
+                                    <span class="typing-text" id="typing-text"></span>
+                                    <span class="cursor">|</span>
+                                </div>
+                                <p class="hero-description">
+                                    Mathematics and Computer Science student at Maseno University, passionate about poetry, 
+                                    global trends analysis, and creating innovative solutions through technology.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number" data-target="50">0</div>
+                                <div class="stat-label">Poems Written</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-target="15">0</div>
+                                <div class="stat-label">Articles Published</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-target="10">0</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-target="100">0</div>
+                                <div class="stat-label">Readers Reached</div>
+                            </div>
+                        </div>
+
+                        <div class="hero-actions">
+                            <button class="btn btn-primary" data-section="poetry">
+                                <i class="fas fa-feather-alt"></i>
+                                Explore Poetry
+                            </button>
+                            <button class="btn btn-secondary" data-section="blog">
+                                <i class="fas fa-globe"></i>
+                                Read Articles
+                            </button>
+                            <button class="btn btn-outline" data-section="portfolio">
+                                <i class="fas fa-briefcase"></i>
+                                View Portfolio
+                            </button>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" class="social-link" data-tooltip="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" data-tooltip="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link" data-tooltip="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link" data-tooltip="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" data-tooltip="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scroll-indicator">
+                    <div class="scroll-arrow"></div>
+                    <span>Scroll to explore</span>
+                </div>
+            </div>
+
+            <!-- Featured Preview -->
+            <div class="featured-preview">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Featured Works</h2>
+                        <p class="section-subtitle">
+                            Discover my latest poetry, global trend analyses, and innovative projects
+                        </p>
+                    </div>
+                    
+                    <div class="preview-grid">
+                        <div class="preview-card">
+                            <div class="preview-image">
+                                <img src="4.jpg" alt="Latest Poetry">
+                                <div class="preview-overlay">
+                                    <i class="fas fa-feather-alt"></i>
+                                </div>
+                            </div>
+                            <div class="preview-content">
+                                <h3>Latest Poetry Collection</h3>
+                                <p>Explore my newest poems about life, technology, and the human experience.</p>
+                                <button class="preview-btn" data-section="poetry">Read Poems</button>
+                            </div>
+                        </div>
+                        
+                        <div class="preview-card">
+                            <div class="preview-image">
+                                <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=400&h=200&fit=crop" alt="Global Trends">
+                                <div class="preview-overlay">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                            </div>
+                            <div class="preview-content">
+                                <h3>Global Trends Analysis</h3>
+                                <p>In-depth analysis of current world events and emerging trends.</p>
+                                <button class="preview-btn" data-section="blog">Read Articles</button>
+                            </div>
+                        </div>
+                        
+                        <div class="preview-card">
+                            <div class="preview-image">
+                                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=200&fit=crop" alt="Tech Projects">
+                                <div class="preview-overlay">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                            </div>
+                            <div class="preview-content">
+                                <h3>Tech Projects</h3>
+                                <p>Innovative solutions combining mathematics, computer science, and creativity.</p>
+                                <button class="preview-btn" data-section="portfolio">View Projects</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Poetry Section -->
+        <section id="poetry" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Poetry Collection</h2>
+                    <p class="section-subtitle">
+                        Words that capture the essence of life, love, technology, and the human spirit
+                    </p>
+                </div>
+
+                <div class="poetry-filters">
+                    <button class="filter-btn active" data-filter="all">All Poems</button>
+                    <button class="filter-btn" data-filter="university">University Life</button>
+                    <button class="filter-btn" data-filter="technology">Technology</button>
+                    <button class="filter-btn" data-filter="love">Love & Romance</button>
+                    <button class="filter-btn" data-filter="nature">Nature</button>
+                    <button class="filter-btn" data-filter="life">Life & Philosophy</button>
+                </div>
+
+                <div class="poetry-grid">
+                    <!-- Poem 1 -->
+                    <article class="poem-card" data-category="technology">
+                        <div class="poem-image">
+                            <img src="6.jpg" alt="Digital Dreams">
+                            <div class="poem-overlay">
+                                <button class="read-poem-btn" data-poem="1">
+                                    <i class="fas fa-book-open"></i>
+                                    Read Poem
+                                </button>
+                            </div>
+                        </div>
+                        <div class="poem-content">
+                            <div class="poem-meta">
+                                <span class="poem-date">July 2, 2025</span>
+                                <span class="poem-category">Technology</span>
+                            </div>
+                            <h3 class="poem-title">Digital Dreams</h3>
+                            <p class="poem-excerpt">In circuits and code we find our way, Through binary paths where thoughts convey...</p>
+                            <div class="poem-stats">
+                                <button class="stat-btn like-btn" data-poem="1">
+                                    <i class="far fa-heart"></i>
+                                    <span class="like-count">42</span>
+                                </button>
+                                <button class="stat-btn comment-btn" data-poem="1">
+                                    <i class="far fa-comment"></i>
+                                    <span class="comment-count">8</span>
+                                </button>
+                                <button class="stat-btn share-btn" data-poem="1">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Poem 2 -->
+                    <article class="poem-card" data-category="love">
+                        <div class="poem-image">
+                            <img src="11.jpg" alt="Moonlit Whispers">
+                            <div class="poem-overlay">
+                                <button class="read-poem-btn" data-poem="2">
+                                    <i class="fas fa-book-open"></i>
+                                    Read Poem
+                                </button>
+                            </div>
+                        </div>
+                        <div class="poem-content">
+                            <div class="poem-meta">
+                                <span class="poem-date">June 28, 2025</span>
+                                <span class="poem-category">Love</span>
+                            </div>
+                            <h3 class="poem-title">Moonlit Whispers</h3>
+                            <p class="poem-excerpt">Under silver light we dance tonight, Hearts beating in perfect rhyme...</p>
+                            <div class="poem-stats">
+                                <button class="stat-btn like-btn" data-poem="2">
+                                    <i class="far fa-heart"></i>
+                                    <span class="like-count">67</span>
+                                </button>
+                                <button class="stat-btn comment-btn" data-poem="2">
+                                    <i class="far fa-comment"></i>
+                                    <span class="comment-count">15</span>
+                                </button>
+                                <button class="stat-btn share-btn" data-poem="2">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Poem 3 -->
+                    <article class="poem-card" data-category="university">
+                        <div class="poem-image">
+                            <img src="7.jpeg" alt="Maseno Mornings">
+                            <div class="poem-overlay">
+                                <button class="read-poem-btn" data-poem="3">
+                                    <i class="fas fa-book-open"></i>
+                                    Read Poem
+                                </button>
+                            </div>
+                        </div>
+                        <div class="poem-content">
+                            <div class="poem-meta">
+                                <span class="poem-date">July3 ,2025</span>
+                                <span class="poem-category">University Life</span>
+                            </div>
+                            <h3 class="poem-title">Maseno Mornings</h3>
+                            <p class="poem-excerpt">Dawn breaks over lecture halls, Where dreams and knowledge intertwine...</p>
+                            <div class="poem-stats">
+                                <button class="stat-btn like-btn" data-poem="3">
+                                    <i class="far fa-heart"></i>
+                                    <span class="like-count">34</span>
+                                </button>
+                                <button class="stat-btn comment-btn" data-poem="3">
+                                    <i class="far fa-comment"></i>
+                                    <span class="comment-count">12</span>
+                                </button>
+                                <button class="stat-btn share-btn" data-poem="3">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Poem 4 -->
+                    <article class="poem-card" data-category="nature">
+                        <div class="poem-image">
+                            <img src="8.jpg" alt="Mountain Solitude">
+                            <div class="poem-overlay">
+                                <button class="read-poem-btn" data-poem="4">
+                                    <i class="fas fa-book-open"></i>
+                                    Read Poem
+                                </button>
+                            </div>
+                        </div>
+                        <div class="poem-content">
+                            <div class="poem-meta">
+                                <span class="poem-date">June 29, 2025</span>
+                                <span class="poem-category">Nature</span>
+                            </div>
+                            <h3 class="poem-title">Noisy Silence</h3>
+                            <p class="poem-excerpt">High above the world's noise, Where silence speaks the loudest voice...</p>
+                            <div class="poem-stats">
+                                <button class="stat-btn like-btn" data-poem="4">
+                                    <i class="far fa-heart"></i>
+                                    <span class="like-count">28</span>
+                                </button>
+                                <button class="stat-btn comment-btn" data-poem="4">
+                                    <i class="far fa-comment"></i>
+                                    <span class="comment-count">6</span>
+                                </button>
+                                <button class="stat-btn share-btn" data-poem="4">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Poem 5 -->
+                    <article class="poem-card" data-category="life">
+                        <div class="poem-image">
+                            <img src="9.jpg" alt="Reflections">
+                            <div class="poem-overlay">
+                                <button class="read-poem-btn" data-poem="5">
+                                    <i class="fas fa-book-open"></i>
+                                    Read Poem
+                                </button>
+                            </div>
+                        </div>
+                        <div class="poem-content">
+                            <div class="poem-meta">
+                                <span class="poem-date">July 3, 2025</span>
+                                <span class="poem-category">Life & Philosophy</span>
+                            </div>
+                            <h3 class="poem-title">Reflections</h3>
+                            <p class="poem-excerpt">In mirrors of time we see ourselves, Past, present, future shelves...</p>
+                            <div class="poem-stats">
+                                <button class="stat-btn like-btn" data-poem="5">
+                                    <i class="far fa-heart"></i>
+                                    <span class="like-count">51</span>
+                                </button>
+                                <button class="stat-btn comment-btn" data-poem="5">
+                                    <i class="far fa-comment"></i>
+                                    <span class="comment-count">18</span>
+                                </button>
+                                <button class="stat-btn share-btn" data-poem="5">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Poem 6 -->
+                    <article class="poem-card" data-category="technology">
+                        <div class="poem-image">
+                            <img src="10.jpg" alt="Algorithm of the Heart">
+                            <div class="poem-overlay">
+                                <button class="read-poem-btn" data-poem="6">
+                                    <i class="fas fa-book-open"></i>
+                                    Read Poem
+                                </button>
+                            </div>
+                        </div>
+                        <div class="poem-content">
+                            <div class="poem-meta">
+                                <span class="poem-date">July 4, 2025</span>
+                                <span class="poem-category">Technology</span>
+                            </div>
+                            <h3 class="poem-title">Algorithm of the Heart</h3>
+                            <p class="poem-excerpt">If love were code, what would it be? A function of you and me...</p>
+                            <div class="poem-stats">
+                                <button class="stat-btn like-btn" data-poem="6">
+                                    <i class="far fa-heart"></i>
+                                    <span class="like-count">73</span>
+                                </button>
+                                <button class="stat-btn comment-btn" data-poem="6">
+                                    <i class="far fa-comment"></i>
+                                    <span class="comment-count">22</span>
+                                </button>
+                                <button class="stat-btn share-btn" data-poem="6">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="newsletter-section">
+                    <div class="newsletter-content">
+                        <h3>Stay Updated</h3>
+                        <p>Subscribe to receive notifications about new poems and articles</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Global Trends & Kenya News</h2>
+                    <p class="section-subtitle">
+                        In-depth analysis of world events, technology trends, and Kenya's role in global development
+                    </p>
+                </div>
+
+                <!-- Featured Article -->
+                <div class="featured-article">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=600&h=300&fit=crop" alt="Kenya Tech Hub">
+                        <div class="featured-badge">Featured</div>
+                    </div>
+                    <div class="featured-content">
+                        <h3 class="featured-title">Kenya's Silicon Savannah: Leading Africa's Tech Revolution</h3>
+                        <p class="featured-excerpt">
+                            How Kenya became the technology hub of East Africa, from M-Pesa innovation to thriving startup ecosystem. 
+                            Exploring the factors that made Nairobi the "Silicon Savannah" and its impact on continental development.
+                        </p>
+                        <div class="article-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>June 25, 2025</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-clock"></i>
+                                <span>4 min read</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-eye"></i>
+                                <span>2.3K views</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary read-article-btn" data-article="kenya-tech">
+                            <i class="fas fa-arrow-right"></i>
+                            Read Full Article
+                        </button>
+                    </div>
+                </div>
+
+                <div class="blog-filters">
+                    <button class="filter-btn active" data-filter="all">All Articles</button>
+                    <button class="filter-btn" data-filter="technology">Technology</button>
+                    <button class="filter-btn" data-filter="economics">Economics</button>
+                    <button class="filter-btn" data-filter="politics">Politics</button>
+                    <button class="filter-btn" data-filter="climate">Climate</button>
+                    <button class="filter-btn" data-filter="social">Social Issues</button>
+                    <button class="filter-btn" data-filter="sports">Sports</button>
+                  <button class="filter-btn" data-filter="sports">Sports</button>
+
+                </div>
+
+                <div class="blog-grid">
+                    <!-- Article 1 - Kenya Economy -->
+                    <article class="blog-card" data-category="economics">
+                        <div class="blog-image">
+                            <img src="17.jpg" alt="Kenya Economy">
+                            <div class="blog-overlay">
+                                <button class="read-article-btn" data-article="kenya-economy">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="article-meta">
+                                <span class="article-date">July 3, 2025</span>
+                                <span class="article-category">Economics</span>
+                            </div>
+                            <h3 class="blog-title">Kenya's Economic Growth: Opportunities and Challenges in 2024</h3>
+                            <p class="blog-excerpt">Analyzing Kenya's economic trajectory, from agricultural exports to digital financial services and the challenges ahead...</p>
+                            <div class="blog-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>1.8K</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-heart"></i>
+                                    <span>89</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-comment"></i>
+                                    <span>23</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 - Kenya Politics -->
+                    <article class="blog-card" data-category="politics">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=400&h=250&fit=crop" alt="Kenya Politics">
+                            <div class="blog-overlay">
+                                <button class="read-article-btn" data-article="kenya-politics">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="article-meta">
+                                <span class="article-date">June 28, 2025</span>
+                                <span class="article-category">Politics</span>
+                            </div>
+                            <h3 class="blog-title">Kenya's Democratic Journey: Progress and Reforms in 2024</h3>
+                            <p class="blog-excerpt">Examining Kenya's political landscape, democratic institutions, and ongoing reforms shaping the nation's future...</p>
+                            <div class="blog-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>2.1K</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-heart"></i>
+                                    <span>156</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-comment"></i>
+                                    <span>45</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 - Kenya Climate -->
+                    <article class="blog-card" data-category="climate">
+                        <div class="blog-image">
+                            <img src="18.jpg" alt="Kenya Climate">
+                            <div class="blog-overlay">
+                                <button class="read-article-btn" data-article="kenya-climate">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="article-meta">
+                                <span class="article-date">July 4, 2025</span>
+                                <span class="article-category">Climate</span>
+                            </div>
+                            <h3 class="blog-title">Kenya's Climate Action: Green Energy and Conservation Leadership</h3>
+                            <p class="blog-excerpt">How Kenya is leading Africa in renewable energy adoption and wildlife conservation efforts...</p>
+                            <div class="blog-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>1.5K</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-heart"></i>
+                                    <span>78</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-comment"></i>
+                                    <span>19</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 - Kenya Education -->
+                    <article class="blog-card" data-category="social">
+                        <div class="blog-image">
+                            <img src="19.jpg" alt="Kenya Education">
+                            <div class="blog-overlay">
+                                <button class="read-article-btn" data-article="kenya-education">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="article-meta">
+                                <span class="article-date">June 30, 2025</span>
+                                <span class="article-category">Education</span>
+                            </div>
+                            <h3 class="blog-title">Transforming Education in Kenya: Digital Learning Revolution</h3>
+                            <p class="blog-excerpt">The impact of digital technology on Kenya's education system and student outcomes...</p>
+                            <div class="blog-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>1.2K</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-heart"></i>
+                                    <span>65</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-comment"></i>
+                                    <span>14</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 - Kenya Sports -->
+                    <article class="blog-card" data-category="sports">
+                        <div class="blog-image">
+                            <img src="20.jpg" alt="Kenya Sports">
+                            <div class="blog-overlay">
+                                <button class="read-article-btn" data-article="kenya-sports">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="article-meta">
+                                <span class="article-date">June 20, 2025</span>
+                                <span class="article-category">Sports</span>
+                            </div>
+                            <h3 class="blog-title">Kenya's Athletic Excellence: Dominating Global Running</h3>
+                            <p class="blog-excerpt">The story behind Kenya's incredible success in long-distance running and marathon championships...</p>
+                            <div class="blog-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>980</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-heart"></i>
+                                    <span>42</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-comment"></i>
+                                    <span>8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 6 - Kenya Agriculture -->
+                    <article class="blog-card" data-category="economics">
+                        <div class="blog-image">
+                            <img src="21.jpg" alt="Kenya Agriculture">
+                            <div class="blog-overlay">
+                                <button class="read-article-btn" data-article="kenya-agriculture">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="article-meta">
+                                <span class="article-date">July 3, 2025</span>
+                                <span class="article-category">Agriculture</span>
+                            </div>
+                            <h3 class="blog-title">Kenya's Agricultural Innovation: Feeding Africa's Future</h3>
+                            <p class="blog-excerpt">How Kenyan farmers are using technology and sustainable practices to revolutionize agriculture...</p>
+                            <div class="blog-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>1.4K</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-heart"></i>
+                                    <span>87</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-comment"></i>
+                                    <span>25</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 7 - Kenya Healthcare -->
+                    <article class="blog-card" data-category="social">
+                        <div class="blog-image">
+                            <img src="22.jpg" alt="Kenya Healthcare">
+                            <div class="blog-overlay">
+                                <button class="read-article-btn" data-article="kenya-healthcare">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="article-meta">
+                                <span class="article-date">June 20, 2025</span>
+                                <span class="article-category">Healthcare</span>
+                            </div>
+                            <h3 class="blog-title">Kenya's Healthcare Revolution: Digital Health Solutions</h3>
+                            <p class="blog-excerpt">Exploring Kenya's innovative approach to healthcare delivery through technology and community programs...</p>
+                            <div class="blog-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>1.1K</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-heart"></i>
+                                    <span>73</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-comment"></i>
+                                    <span>16</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 8 - Kenya Tourism -->
+                    <article class="blog-card" data-category="economics">
+                        <div class="blog-image">
+                            <img src="23.jpg" alt="Kenya Tourism">
+                            <div class="blog-overlay">
+                                <button class="read-article-btn" data-article="kenya-tourism">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="article-meta">
+                                <span class="article-date">June 17,2025</span>
+                                <span class="article-category">Tourism</span>
+                            </div>
+                            <h3 class="blog-title">Kenya's Tourism Renaissance: Sustainable Travel and Conservation</h3>
+                            <p class="blog-excerpt">How Kenya is balancing tourism growth with wildlife conservation and community development...</p>
+                            <div class="blog-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>1.6K</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-heart"></i>
+                                    <span>94</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-comment"></i>
+                                    <span>31</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 9 - Kenya Infrastructure -->
+                    <article class="blog-card" data-category="technology">
+                        <div class="blog-image">
+                            <img src="24.jpg" alt="Kenya Infrastructure">
+                            <div class="blog-overlay">
+                                <button class="read-article-btn" data-article="kenya-infrastructure">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="article-meta">
+                                <span class="article-date">June 29, 2025</span>
+                                <span class="article-category">Infrastructure</span>
+                            </div>
+                            <h3 class="blog-title">Kenya's Infrastructure Boom: Building the Future</h3>
+                            <p class="blog-excerpt">Major infrastructure projects transforming Kenya's connectivity and economic potential...</p>
+                            <div class="blog-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>1.3K</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-heart"></i>
+                                    <span>68</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-comment"></i>
+                                    <span>12</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="load-more-section">
+                    <button class="btn btn-outline load-more-btn">
+                        <i class="fas fa-plus"></i>
+                        Load More Articles
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Portfolio</h2>
+                    <p class="section-subtitle">
+                        Innovative projects combining mathematics, computer science, and creative problem-solving
+                    </p>
+                </div>
+
+
+                   <a href="portfolio.pdf" class="lexy" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="ai">AI & Machine Learning</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                    <button class="filter-btn" data-filter="data">Data Analysis</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="Poetry Platform">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <button class="project-link" data-tooltip="View Live">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                    <button class="project-link" data-tooltip="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-date">June 19, 2025</span>
+                                <span class="project-status">Completed</span>
+                            </div>
+                            <h3 class="project-title">Interactive Poetry Platform</h3>
+                            <p class="project-description">A modern web platform for sharing and discovering poetry with social features and analytics.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Socket.io</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" data-category="ai">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop" alt="Trend Analysis AI">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <button class="project-link" data-tooltip="View Demo">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                    <button class="project-link" data-tooltip="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-date">July</span>
+                                <span class="project-status">In Progress</span>
+                            </div>
+                            <h3 class="project-title">Global Trends Analysis AI</h3>
+                            <p class="project-description">Machine learning system for analyzing and predicting global trends from news and social media data.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">NLP</span>
+                                <span class="tech-tag">FastAPI</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card" data-category="mobile">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop" alt="Student Helper App">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <button class="project-link" data-tooltip="Download">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                    <button class="project-link" data-tooltip="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-date">June 2025</span>
+                                <span class="project-status">Completed</span>
+                            </div>
+                            <h3 class="project-title">Maseno Student Helper</h3>
+                            <p class="project-description">Mobile app helping Maseno University students with course management, study groups, and campus navigation.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Maps API</span>
+                                <span class="tech-tag">Push Notifications</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card" data-category="data">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Kenya Data Dashboard">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <button class="project-link" data-tooltip="View Dashboard">
+                                        <i class="fas fa-chart-bar"></i>
+                                    </button>
+                                    <button class="project-link" data-tooltip="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-date">May 2025</span>
+                                <span class="project-status">Completed</span>
+                            </div>
+                            <h3 class="project-title">Kenya Economic Data Dashboard</h3>
+                            <p class="project-description">Interactive dashboard visualizing Kenya's economic indicators and development metrics.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">REST API</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop" alt="Math Learning Platform">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <button class="project-link" data-tooltip="Try Demo">
+                                        <i class="fas fa-calculator"></i>
+                                    </button>
+                                    <button class="project-link" data-tooltip="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-date">May 2025</span>
+                                <span class="project-status">Completed</span>
+                            </div>
+                            <h3 class="project-title">Interactive Math Learning Platform</h3>
+                            <p class="project-description">Web-based platform for learning advanced mathematics with interactive visualizations and problem solving.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">MathJax</span>
+                                <span class="tech-tag">WebGL</span>
+                                <span class="tech-tag">Express.js</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6 -->
+                    <article class="project-card" data-category="ai">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=400&h=250&fit=crop" alt="Poetry Generator">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <button class="project-link" data-tooltip="Generate Poetry">
+                                        <i class="fas fa-feather-alt"></i>
+                                    </button>
+                                    <button class="project-link" data-tooltip="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-date">Jun 2025</span>
+                                <span class="project-status">Completed</span>
+                            </div>
+                            <h3 class="project-title">AI Poetry Generator</h3>
+                            <p class="project-description">Neural network trained on classical and modern poetry to generate original poems in various styles.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">PyTorch</span>
+                                <span class="tech-tag">Transformers</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="skills-section">
+                    <h3 class="skills-title">Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Programming Languages</h4>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">Python</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">JavaScript</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Java</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">C++</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Web Technologies</h4>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">React</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="88%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Node.js</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="82%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Vue.js</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="78%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">MongoDB</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Data Science & AI</h4>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">Machine Learning</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">TensorFlow</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Data Analysis</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="88%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Statistics</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">
+                        Passionate about the intersection of mathematics,poetry, technology, and creative expression
+                    </p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="about-intro">
+                            <p class="lead">
+                                I'm a Mathematics and Computer Science student at Maseno University, expressing the beauty of human experience through poetry,
+                                driven by curiosity and a passion for understanding how technology can solve real-world problems.
+                            </p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>My Journey</h3>
+                            <p>
+                                My academic journey at Maseno University has been a fascinating blend of analytical thinking 
+                                and creative expression. While diving deep into mathematical concepts and programming languages, 
+                                I've discovered that poetry provides a unique lens through which to view and interpret the world.
+                            </p>
+                            <p>
+                                This dual perspective has shaped my approach to problem-solving, allowing me to think both 
+                                logically and creatively. Whether I'm debugging code or crafting verses, I'm always seeking 
+                                patterns, beauty, and meaning.
+                            </p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Global Perspective</h3>
+                            <p>
+                                Living in Kenya has given me a unique vantage point on global trends and developments. 
+                                I'm particularly interested in how technology is transforming African societies and 
+                                how local innovations can have global impact.
+                            </p>
+                            <blockquote>
+                                 "Greatness requires internal toughness<br>~Roshel"
+                            </blockquote>
+                            <blockquote>
+                                "The future belongs to those who can bridge the gap between technology and humanity, 
+                                between logic and emotion, between local wisdom and global innovation.
+                                <br>~Alex"
+                            </blockquote>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3>Interests & Passions</h3>
+                            <ul class="interests-list">
+                                <li><i class="fas fa-code"></i> Software Development</li>
+                                <li><i class="fas fa-brain"></i> Artificial Intelligence</li>
+                                <li><i class="fas fa-feather-alt"></i> Poetry & Creative Writing</li>
+                                <li><i class="fas fa-globe"></i> Global Trends Analysis</li>
+                                <li><i class="fas fa-chart-line"></i> Data Science</li>
+                                <li><i class="fas fa-book"></i> Continuous Learning</li>
+                                <li><i class="fas fa-users"></i> Community Building</li>
+                                <li><i class="fas fa-lightbulb"></i> Innovation & Entrepreneurship</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="about-visual">
+                        <div class="profile-card">
+                            <div class="profile-image-large">
+                                <img src="25.jpg" alt="Purelyalex">
+                                <div class="profile-decoration"></div>
+                            </div>
+                            <div class="profile-details">
+                                <h3>Purelyalex</h3>
+                                <p class="profile-title">Student & Creative Technologist</p>
+                                <p class="profile-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Maseno University, Kenya
+                                </p>
+                                <div class="profile-contact">
+                                    <a href="#" class="contact-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <span>alexdonmoh573@gmail.com</span>
+                                    </a>
+                                    <a href="#" class="contact-item">
+                                        <i class="fab fa-linkedin"></i>
+                                        <span>linkedin.com/in/purelyalex</span>
+                                    </a>
+                                    <a href="#" class="contact-item">
+                                        <i class="fab fa-github"></i>
+                                        <span>github.com/purelyalex</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="achievements">
+                            <h4>Recent Achievements</h4>
+                            <div class="achievement-list">
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-trophy"></i>
+                                    </div>
+                                    <div class="achievement-content">
+                                        <h5>Dean's List</h5>
+                                        <p>Academic Excellence Award 2025</p>
+                                    </div>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div class="achievement-content">
+                                        <h5>Hackathon Winner</h5>
+                                        <p>Kenya Tech Challenge 2025</p>
+                                    </div>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-feather-alt"></i>
+                                    </div>
+                                    <div class="achievement-content">
+                                        <h5>Poetry Publication</h5>
+                                        <p>Featured in University Literary Magazine</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Section -->
+                <div class="timeline-section">
+                    <h3>My Journey</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2025</div>
+                            <div class="timeline-content">
+                                <h4>Advanced Studies & Projects</h4>
+                                <p>Focusing on AI/ML projects and global trends analysis while maintaining academic excellence.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024</div>
+                            <div class="timeline-content">
+                                <h4>University Enrollment</h4>
+                                <p>Started Mathematics and Computer Science program at Maseno University, discovering the intersection of analytical and creative thinking.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2023</div>
+                            <div class="timeline-content">
+                                <h4>Poetry & Writing Journey</h4>
+                                <p>Began serious poetry writing and started analyzing global trends, developing a unique voice in creative expression.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2022</div>
+                            <div class="timeline-content">
+                                <h4>Programming Foundation</h4>
+                                <p>Started learning programming languages and discovered passion for technology and problem-solving.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">
+                        Let's connect and explore opportunities for collaboration, discussion, or creative projects
+                    </p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>For professional inquiries and collaborations</p>
+                                <a href="mailto:alexdonmoh573@gmail.com" class="contact-link">alexdonmoh573@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <p>Professional networking and career opportunities</p>
+                                <a href="#" class="contact-link">linkedin.com/in/purelyalex</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <p>Code repositories and open source contributions</p>
+                                <a href="#" class="contact-link">github.com/purelyalex</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Twitter</h4>
+                                <p>Thoughts on technology, poetry, and global trends</p>
+                                <a href="#" class="contact-link">@purelyalex</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Currently based in Kenya</p>
+                                <span class="contact-link">Maseno University, Kenya</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a topic</option>
+                                    <option value="collaboration">Collaboration Opportunity</option>
+                                    <option value="poetry">Poetry Discussion</option>
+                                    <option value="tech">Technology Project</option>
+                                    <option value="trends">Global Trends Analysis</option>
+                                    <option value="academic">Academic Inquiry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Tell me about your project, idea, or just say hello..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="/placeholder.svg?height=40&width=40" alt="Purelyalex" class="footer-logo">
+                        <h3>Purelyalex</h3>
+                    </div>
+                    <p class="footer-description">
+                        Exploring the intersection of mathematics, technology, and creative expression. 
+                        Passionate about poetry, global trends, and innovative solutions.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-section="home">Home</a></li>
+                        <li><a href="#" data-section="poetry">Poetry</a></li>
+                        <li><a href="#" data-section="blog">World Trends</a></li>
+                        <li><a href="#" data-section="portfolio">Portfolio</a></li>
+                        <li><a href="#" data-section="about">About</a></li>
+                        <li><a href="#" data-section="contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Poetry</a></li>
+                        <li><a href="#">Global Trends</a></li>
+                        <li><a href="#">Mathematics</a></li>
+                        <li><a href="#">Computer Science</a></li>
+                        <li><a href="#">Innovation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Stay Connected</h4>
+                    <p>Subscribe to get updates on new poems, articles, and projects.</p>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Purelyalex. All rights reserved.</p>
+                </div>
+                <div class="footer-credits">
+                    <p>Made with <i class="fas fa-heart"></i> by Alex</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Poem Modal -->
+    <div class="modal" id="poem-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-poem-title">Poem Title</h3>
+                <button class="modal-close" id="close-poem-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="poem-meta" id="modal-poem-meta">
+                    <span id="modal-poem-date">Date</span>
+                    <span id="modal-poem-category">Category</span>
+                </div>
+                <div class="poem-full-content" id="poem-full-content">
+                    <!-- Poem content will be loaded here -->
+                </div>
+                <div class="poem-footer">
+                    <div class="poem-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face" alt="Purelyalex" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Purelyalex</h4>
+                            <p>Mathematics & Computer Science Student</p>
+                        </div>
+                    </div>
+                    <div class="poem-actions">
+                        <button class="action-btn like-btn">
+                            <i class="far fa-heart"></i>
+                            <span>Like</span>
+                        </button>
+                        <button class="action-btn share-btn">
+                            <i class="fas fa-share"></i>
+                            <span>Share</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="comments-section">
+                    <h4>Comments</h4>
+                    <div class="comment-form">
+                        <textarea placeholder="Share your thoughts about this poem..."></textarea>
+                        <button class="btn btn-primary">Post Comment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Article Modal -->
+    <div class="modal" id="article-modal">
+        <div class="modal-content" style="max-width: 900px;">
+            <div class="modal-header">
+                <h3 id="modal-article-title">Article Title</h3>
+                <button class="modal-close" id="close-article-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="article-meta" id="modal-article-meta">
+                    <span id="modal-article-date">Date</span>
+                    <span id="modal-article-category">Category</span>
+                    <span id="modal-article-read-time">Read time</span>
+                </div>
+                <div class="article-image" id="modal-article-image">
+                    <!-- Article image will be loaded here -->
+                </div>
+                <div class="article-full-content" id="article-full-content">
+                    <!-- Article content will be loaded here -->
+                </div>
+                <div class="article-footer">
+                    <div class="article-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face" alt="Purelyalex" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Purelyalex</h4>
+                            <p>Mathematics & Computer Science Student</p>
+                        </div>
+                    </div>
+                    <div class="article-actions">
+                        <button class="action-btn like-btn">
+                            <i class="far fa-heart"></i>
+                            <span>Like</span>
+                        </button>
+                        <button class="action-btn share-btn">
+                            <i class="fas fa-share"></i>
+                            <span>Share</span>
+                        </button>
+                        <button class="action-btn bookmark-btn">
+                            <i class="far fa-bookmark"></i>
+                            <span>Save</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="comments-section">
+                    <h4>Comments</h4>
+                    <div class="comment-form">
+                        <textarea placeholder="Share your thoughts about this article..."></textarea>
+                        <button class="btn btn-primary">Post Comment</button>
+                    </div>
+                    <div class="comments-list" id="article-comments-list">
+                        <!-- Comments will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Share Modal -->
+    <div class="modal" id="share-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Share this content</h3>
+                <button class="modal-close" id="close-share-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Share:</p>
+                <div class="share-options">
+                    <div class="share-option" data-platform="facebook">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </div>
+                    <div class="share-option" data-platform="twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </div>
+                    <div class="share-option" data-platform="linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </div>
+                    <div class="share-option" data-platform="whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </div>
+                    <div class="share-option" data-platform="email">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </div>
+                    <div class="share-option" data-platform="copy">
+                        <i class="fas fa-copy"></i>
+                        <span>Copy Link</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Notification Container -->
+    <div id="notification-container" style="position: fixed; top: 100px; right: 20px; z-index: 10001;"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
